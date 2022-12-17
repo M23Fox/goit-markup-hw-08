@@ -4,8 +4,9 @@
 
 .header__container {
     display: flex;
-    align-items: baseline;    
-    position: relative;   
+    align-items: center;    
+    position: relative; 
+    height: 100%;  
 }
 
 .mob-menu-button.is-open {
@@ -19,12 +20,33 @@
 
 .mob-menu-button{
     position: absolute;
-    right: 0;
+    right: 15px;
+    top:10px;
 
     background-color: inherit;
 
+    &:hover,
+    &:focus{
+        color: $hover-color;
+        cursor: pointer;
+    }
+
+    &:hover .icon-menu{
+        fill: $hover-color;
+    }
+    &:focus .icon-menu {
+        fill: $hover-color;
+    }
+    &:hover .icon-cross {
+        fill: $hover-color;
+    }
+    &:focus .icon-cross {
+        fill: $hover-color;
+    }
+
     .icon-menu {
         display: block;
+        
     }
     
     .icon-cross {
@@ -38,12 +60,12 @@
 
 
 
-.header__nav,
-.nav__list {
-    // display: flex;
-    // align-items: center;
-    height: 100%;
-}
+// .header__nav,
+// .nav__list {
+//     display: flex;
+//     align-items: center;
+//     height: 100%;
+// }
 
 // .header__nav {
 //     .conteiner{
