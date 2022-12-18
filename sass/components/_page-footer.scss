@@ -28,8 +28,9 @@
         flex-wrap: wrap;
         justify-content: space-around;
         align-items: baseline;
-        
     }
+
+    
 }
 
 .footer__bloc {
@@ -38,6 +39,9 @@
     align-items: center;
     justify-content: center;
     
+    @media screen and (min-width:1200px) {
+        align-items: flex-start;
+    }
 }
 
 .footer__link {
@@ -55,6 +59,15 @@
     .list__item + .list__item{
         margin-top: 12px;
     
+    }
+}
+
+@media screen and (min-width:1200px) {
+
+    .footer__list{
+        .list__item+.list__item{
+            margin-right: 0;
+        }
     }
 }
 
@@ -77,6 +90,8 @@
     text-transform: uppercase;
 
     color: #FFFFFF;
+
+   
 }
 
 .footer__list {

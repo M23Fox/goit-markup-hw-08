@@ -9,18 +9,21 @@
     @media screen and (max-width:767.98px) {
         .list__item + .list__item {
             margin-top: $grid-margin;
+        }
     }
-
     @media screen and (min-width:768px) {
         display: flex;
         flex-wrap: wrap;
-        gap: 15px;
-
+        
         .list__item {
             width: 354px;
         }
     }
-}
+    
+    @media screen and (min-width:1200px) {
+        flex-wrap: nowrap;        
+    }
+    gap: 15px;
 }
 
 
@@ -41,8 +44,8 @@
         margin-right: auto;
     }
 
-    @media screen and (min-width:768px) {
-               
+    @media screen and (min-width:1200px) {
+        width: 270px;               
     }
     
 }
@@ -55,6 +58,10 @@
 
     color: $title-color;
     margin-bottom: 10px;
+
+    @media screen and (min-width:1200px) {
+        text-align: left;        
+    }
 }
 
 .benefits__descr {

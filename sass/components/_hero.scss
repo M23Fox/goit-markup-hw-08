@@ -26,7 +26,18 @@
         @media (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
-                background-image: linear-gradient(#2F303A66, #2F303A66), url(/images/Hero/Header\ imgtab_1536.jpg.jpg);
+                background-image: linear-gradient(#2F303A66, #2F303A66), url(/images/Hero/Header\ imgtab_1536.jpg);
+        }
+    }
+
+    @media screen and (min-width:1200px) {
+        height: 600px;
+        background-image: linear-gradient(#2F303A66, #2F303A66), url(/images/Hero/Img_desk_1600.jpg);
+    
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: linear-gradient(#2F303A66, #2F303A66), url(/images/Hero/Img_desk_3200.jpg);
         }
     }
 
@@ -37,7 +48,7 @@
 
         @media screen and (min-width:768px) {
            align-items: center;
-           padding-top: 118px;
+           
         }       
     }
 }
@@ -53,6 +64,19 @@
 
     font-size: 26px;
     line-height: calc(42/26);
+
+    @media screen and (min-width:768px) {
+        margin-top: 118px;
+    }
+
+    @media screen and (min-width:1200px) {
+        margin-top: 200px;
+        margin-left: 200px;  
+        margin-right: 200px; 
+        
+        font-size: 44px;
+        line-height: calc(60/44);
+    }
     
 }
 

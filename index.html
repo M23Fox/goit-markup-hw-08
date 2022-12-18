@@ -35,27 +35,62 @@
             </svg>
         </button>
        
-        <div class="mob-menu-container">
-            <nav class="header__nav nav">
-                <ul class="nav__list list">
-                    <li class="list__item">
-                        <a class="nav__link current-link" href="./index.html">
-                            Студія
-                        </a>
-                    </li>
-                    <li class="list__item">
+        <nav class="header__nav nav">
+            <ul class="nav__list list">
+                <li class="list__item">
+                    <a class="nav__link current-link" href="./index.html">
+                        Студія
+                    </a>
+                </li>
+                <li class="list__item">
                         <a class="nav__link" href="./portfolio.html">
                             Портфоліо
                         </a>
-                    </li>
-                    <li class="list__item">
+                </li>
+                <li class="list__item">
                         <a class="nav__link" href="">
                             Контакти
                         </a>
-                    </li>
-                </ul>
-            </nav>
-            <ul class="address list">
+                </li>
+            </ul>
+        </nav>
+        <ul class="address list">
+                <li class="list__item">
+                    <a class="address__link" href="mailto:info@devstudio.com">
+                        <svg class="icon" width="16" height="12">
+                            <use href="./images/icons.svg#icon-envelope"></use>
+                        </svg>
+                        info@devstudio.com
+                    </a>
+                </li>
+                <li class="list__item">
+                    <a class="address__link" href="tel:+380961111111">
+                        <svg class="icon" width="10" height="16">
+                            <use href="./images/icons.svg#icon-phone1"></use>
+                        </svg>
+                        +38 096 111 11 11
+                    </a>
+                </li>
+        </ul>
+        <div class="mob-menu-container">
+            <ul class="mob-nav__list list">
+                <li class="list__item">
+                    <a class="nav__link current-link" href="./index.html">
+                        Студія
+                    </a>
+                </li>
+                <li class="list__item">
+                    <a class="nav__link" href="./portfolio.html">
+                        Портфоліо
+                    </a>
+                </li>
+                <li class="list__item">
+                    <a class="nav__link" href="">
+                        Контакти
+                    </a>
+                </li>
+            </ul>
+            <ul class="mob-address list">
                 <li class="list__item">
                     <a class="address__link" href="mailto:info@devstudio.com">
                         <svg class="icon" width="16" height="12">
@@ -153,7 +188,16 @@
             <h2 class="team__title">Наша команда</h2>
             <ul class="team__list list">
                 <li class="list__item">
-                    <img srcset="./images/Team/img_mob_450.jpg 1x, ./images/Team/img_mob_900.jpg 2x" src="./images/Team/img_mob_450.jpg" alt="фото члена команди 1" class="team-img" width="450">
+                    <img 
+                    srcset="./images/Team/img_mob_450.jpg 450w, 
+                            ./images/Team/img_mob_900.jpg 900w,
+                            ./images/Team/img_tab_708.jpg 708w,
+                            ./images/Team/img_tab_354.jpg 354w,
+                            ./images/Team/img_desk_270.jpg 270w,
+                            ./images/Team/img_desk_540.jpg 540w"
+                    sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px,(min-width: 480px) 450px, 100vw"
+                    src="./images/Team/img_mob_450.jpg" 
+                    alt="фото члена команди 1" class="team-img" width="450">
                     <h3 class="list__name">Ігор Дем'яненко</h3>
                     <p class="list__job">Product Designer</p>
                     <ul class="social-link__list list">
@@ -188,7 +232,15 @@
                     </ul>
                 </li>
                 <li class="list__item">
-                    <img srcset="./images/Team/img_mob_450-1.jpg 1x, ./images/Team/img_mob_900-1.jpg 2x" src="./images/Team/img_mob_450-1.jpg" alt="фото члена команди 2" class="team-img" width="450">
+                    <img 
+                    srcset="./images/Team/img_mob_450-1.jpg 450w, 
+                            ./images/Team/img_mob_900-1.jpg 900w,
+                            ./images/Team/img_tab_708-1.jpg 708w,
+                            ./images/Team/img_tab_354-1.jpg 354w,
+                            ./images/Team/img_desk_270-1.jpg 270w,
+                            ./images/Team/img_desk_540-1.jpg 540w"
+                    sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px,(min-width: 480px) 450px, 100vw"
+                    src="./images/Team/img_mob_450-1.jpg" alt="фото члена команди 2" class="team-img" width="450">
                     <h3 class="list__name">Ольга Рєпіна</h3>
                     <p class="list__job">Frontend Developer</p>
                     <ul class="social-link__list list">
@@ -223,7 +275,15 @@
                     </ul>
                 </li>
                 <li class="list__item">
-                    <img srcset="./images/Team/img_mob_450-2.jpg 1x, ./images/Team/img_mob_900-2.jpg 2x" src="./images/Team/img_mob_450-2.jpg" alt="фото члена команди 3" class="team-img" width="450">
+                    <img 
+                    srcset="./images/Team/img_mob_450-2.jpg 450w, 
+                            ./images/Team/img_mob_900-2.jpg 900w,
+                            ./images/Team/img_tab_708-2.jpg 708w,
+                            ./images/Team/img_tab_354-2.jpg 354w,
+                            ./images/Team/img_desk_270-2.jpg 270w,
+                            ./images/Team/img_desk_540-2.jpg 540w"
+                    sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px,(min-width: 480px) 450px, 100vw" 
+                    src="./images/Team/img_mob_450-2.jpg" alt="фото члена команди 3" class="team-img" width="450">
                     <h3 class="list__name">Микола Тарасов</h3>
                     <p class="list__job">Marketing</p>
                     <ul class="social-link__list list">
@@ -258,7 +318,15 @@
                     </ul>
                 </li>
                 <li class="list__item">
-                    <img srcset="./images/Team/img_mob_450-3.jpg 1x, ./images/Team/img_mob_900-3.jpg 2x" src="./images/Team/img_mob_450-3.jpg" alt="фото члена команди 4" class="team-img" width="450">
+                    <img 
+                    srcset="./images/Team/img_mob_450-3.jpg 450w, 
+                            ./images/Team/img_mob_900-3.jpg 900w,
+                            ./images/Team/img_tab_708-3.jpg 708w,
+                            ./images/Team/img_tab_354-3.jpg 354w,
+                            ./images/Team/img_desk_270-3.jpg 270w,
+                            ./images/Team/img_desk_540-3.jpg 540w"
+                    sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px,(min-width: 480px) 450px, 100vw"
+                    src="./images/Team/img_mob_450-3.jpg" alt="фото члена команди 4" class="team-img" width="450">
                     <h3 class="list__name">Михайло Єрмаков</h3>
                     <p class="list__job">UI Designer</p>
                     <ul class="social-link__list list">

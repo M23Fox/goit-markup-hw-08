@@ -17,10 +17,6 @@
 
 }
 
-// .team__list {
-//     display: flex;
-// }
-
 .team__list {
     @media screen and (max-width: 767.98px) {
             .list__item+.list__item {
@@ -28,7 +24,7 @@
             }
         }
 
-    @media screen and (min-width:768px) {
+    @media screen and (min-width:768px) and (max-width:1199.98px) {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -40,6 +36,15 @@
             &:nth-child(2n) {
                 margin-left: $grid-margin;
             }
+        }
+    }
+
+    @media screen and (min-width:1200px) {
+        display: flex;
+        flex-wrap: nowrap;
+        
+        .list__item + .list__item{
+            margin-left: $grid-margin;
         }
     }
 
