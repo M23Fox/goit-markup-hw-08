@@ -109,8 +109,10 @@ button {
   }
 }
 
-.header__logo {
-  margin-right: 93px;
+@media screen and (min-width: 1200px) {
+  .header__logo {
+    margin-right: 93px;
+  }
 }
 
 .logo__studio {
@@ -240,8 +242,10 @@ button {
   }
 }
 
-.header__nav {
-  margin-right: 305px;
+@media screen and (min-width: 1200px) {
+  .header__nav {
+    margin-right: 305px;
+  }
 }
 
 .nav__list {
@@ -254,6 +258,11 @@ button {
 }
 .nav__list .list__item + .list__item {
   margin-left: 50px;
+}
+@media screen and (min-width: 768px) {
+  .nav__list {
+    margin-right: 96px;
+  }
 }
 
 .nav__link {
@@ -298,6 +307,8 @@ button {
   .address__link {
     font-size: 14px;
     line-height: 1.1428571429;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 .address__link:hover, .address__link:focus {
@@ -352,7 +363,6 @@ button {
 }
 @media screen and (min-width: 768px) {
   .hero {
-    width: 768px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/Hero/Header\ imgtab_768.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/Hero/Header\ imgtab_768.jpg);
   }
@@ -662,10 +672,10 @@ button {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    gap: 15px;
   }
   .benefits__list .list__item {
-    -ms-flex-preferred-size: calc(50% - 30px);
-        flex-basis: calc(50% - 30px);
+    width: 354px;
   }
 }
 

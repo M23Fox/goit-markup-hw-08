@@ -14,12 +14,11 @@
     @media screen and (min-width:768px) {
         display: flex;
         flex-wrap: wrap;
+        gap: 15px;
 
-        .list__item{
-            flex-basis: calc((100% / 2) - 30px);
-            
-        
-        }        
+        .list__item {
+            width: 354px;
+        }
     }
 }
 }

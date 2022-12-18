@@ -18,8 +18,9 @@
         background-image: linear-gradient(#2F303A66, #2F303A66), url(/images/Hero/Header\ img_mob_960.jpg);
         }
     }
+
     @media screen and (min-width:768px) {
-        width: 768px;
+        
         background-image: linear-gradient(#2F303A66, #2F303A66), url(/images/Hero/Header\ imgtab_768.jpg);
     
         @media (min-device-pixel-ratio: 2),
