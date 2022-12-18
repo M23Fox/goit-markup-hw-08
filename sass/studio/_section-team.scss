@@ -9,6 +9,7 @@
     line-height: calc(33/28);
     text-align: center;
     letter-spacing: 0.03em;
+    margin-bottom: 30px;
 }
 
 .team-img{
@@ -21,13 +22,26 @@
 // }
 
 .team__list {
-    .list__item+.list__item {
+    @media screen and (max-width: 767.98px) {
+            .list__item+.list__item {
+                margin-top: $grid-margin;
+            }
+        }
 
-        margin-top: $grid-margin;
+    @media screen and (min-width:768px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+        .list__item{
+            flex-basis: calc(100% / 2 - 30px);
+            margin-bottom: $grid-margin;
+            
+            &:nth-child(2n) {
+                margin-left: $grid-margin;
+            }
+        }
     }
-}
-
-.team__list {
 
     .list__item {
         background: #ffffff;

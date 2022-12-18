@@ -22,6 +22,14 @@
     .footer__bloc + .footer__bloc {
         margin-top: 60px;
     }
+
+    @media screen and (min-width:768px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: baseline;
+        
+    }
 }
 
 .footer__bloc {
@@ -92,6 +100,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+
     // margin-left: 93px;
 }
 
@@ -117,6 +126,10 @@
     border-radius: 4px;
     background-color: inherit;
     color: rgba(255, 255, 255, 0.6);
+
+    @media screen and (min-width:768px) {
+        width: 450px;
+    }
 
         &:focus{
             color: #FFFFFF;
