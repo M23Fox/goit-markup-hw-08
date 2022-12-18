@@ -12,6 +12,12 @@
         
     position: relative; 
     height: 100%;  
+
+    @media screen and (min-width:1200px) {
+        min-width: 100% ;
+        padding-right: 200px;
+        padding-left: 200px;
+    }
 }
 
 
@@ -80,46 +86,52 @@
         .address{
             display: flex;
             align-items:baseline;
-            justify-content: space-around;
+            
             flex-direction: column;
             padding-top: 15px;
             padding-bottom: 15px;
+
+            @media screen and (max-width:1199.98px) {
+                justify-content: space-around;
+            }
+
+            @media screen and (min-width:1200px){
+                flex-direction: row;
+               
+                align-items: center;
+
+                .list__item + .list__item{
+                    margin-left: 40px;
+                }
+            }
         }
 
-        
-        
+    }
 
+}
+
+.address{
+    .list__item{
+        @media screen and (min-width:1200px) {
+
+        }
     }
 }
 
+.header__nav{
+    margin-right: 305px;
+}
 
 .nav__list {
     display: flex;
     align-items: center;
-    margin-right: 96px;
+   
 
     .list__item + .list__item{
         margin-left: 50px;
     }
     
 }
-
-// .header__nav {
-//     .conteiner{
-//     display: flex;
-//     margin-left: $margin-header-nav;
-//     }
-// }
-
-// .nav__list {
-//     .list__item+.list__item{
-//     margin-left: $margin-header-nav;
-//     }
-// }
-
-// .header__link+.header__link {
-//     margin-left: $margin-header-nav;
-// }
 
 .nav__link {
     font-weight: 500;
@@ -144,14 +156,6 @@
         }
 }
 
-
-
-// .address {
-//     .list__item+.list__item{
-//     margin-left: $margin-header-nav;
-//     }
-// }
-
 .address__link {
     font-weight: 500;
     font-size: 12px;
@@ -159,8 +163,8 @@
     letter-spacing: 0.02em;
 
     color: $second-color;
-    // padding-top: 20px;
-    // padding-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 
     display: flex;
     align-items: center;
@@ -181,13 +185,6 @@
             color: $hover-color;
         }
 }
-
-// .address {
-//     .list__item{
-//     display: flex;
-//     align-items: center;
-//     }
-// }
 
 .current-link {
     position: relative;
