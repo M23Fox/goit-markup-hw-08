@@ -14,7 +14,9 @@
     flex-wrap: wrap;
     justify-content: center;
 
-    gap: 30px;
+    @media screen and (min-width:1199.98px) {
+        gap: 30px;
+    }
 
     @media screen and (min-width:1200px) {
         flex-wrap: nowrap; 
