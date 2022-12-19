@@ -280,13 +280,15 @@
 .mob-address{
     display: flex;
     flex-direction: column-reverse;
-    margin-top: auto;
+    margin-bottom: 64px;
+    gap: 32px;
 }
 
 .mobile-menu {
     padding: 0;
     margin: 0;
     list-style: none;
+    margin-bottom: 306px;
     
 }
 

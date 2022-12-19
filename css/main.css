@@ -366,13 +366,15 @@ button {
   -webkit-box-direction: reverse;
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
-  margin-top: auto;
+  margin-bottom: 64px;
+  gap: 32px;
 }
 
 .mobile-menu {
   padding: 0;
   margin: 0;
   list-style: none;
+  margin-bottom: 306px;
 }
 
 .mobile-menu .nav-link {
