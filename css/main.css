@@ -324,6 +324,11 @@ button {
   fill: #2196F3;
 }
 
+.js-open-menu {
+  position: absolute;
+  right: 10px;
+}
+
 .menu-container {
   position: fixed;
   top: 0;
@@ -391,6 +396,22 @@ button {
   line-height: 28px;
   letter-spacing: 0.02em;
   color: #757575;
+}
+
+.mob-social-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+.mob-social {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2222222222;
+  letter-spacing: 0.02em;
+  color: #2196F3;
 }
 
 .hero {

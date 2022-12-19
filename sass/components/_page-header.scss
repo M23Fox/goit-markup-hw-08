@@ -247,6 +247,11 @@
     fill: $hover-color;
 }
 
+.js-open-menu{
+    position: absolute;
+    right: 10px;
+}
+
 .menu-container {
     position: fixed;
     top: 0;
@@ -311,4 +316,20 @@
     letter-spacing: 0.02em;
     
     color: $second-color;
+}
+
+.mob-social-link{
+    display: flex;
+    gap: 20px;
+}
+
+.mob-social{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: calc(22/18);
+    
+    letter-spacing: 0.02em;
+    
+    color: #2196F3;
 }
